@@ -4,49 +4,45 @@ Array.prototype.myMap = function (callback) {
     let index_Count;
 
     let tempArr = this;
-    let len = tempArr.length;
+    let length = tempArr.length;
 
-    arr = new Array(len);
+    arr = new Array(length);
     index_Count = 0;
     
     let index_Value;
     let mapped_Value;
 
-    while (index_Count < len) {
+    for (index_Count = 0; index_Count < length; index_Count++)
+    {
         index_Value = tempArr[index_Count];
         mapped_Value = callback.call(element, index_Value, index_Count, tempArr);            
         arr[index_Count] = mapped_Value;
-        index_Count++;
     };
     return arr;
 };
 
 /* ---Testing--- */
-let numbers = [2, 4, 6, 9];
 
+/* Array */
+let numbers = [2, 4, 6, 9];
+let numbers2 = [5, 10, 15, 20];
+
+/* Function Definitons */
 function times2(num) {
     return num * 2;
 }
 
-function squareroot(num) {
+function modulo(num) {
     return num % 2;
 }
 
-const cb = (x) => {
-    console.log(times2(x));
-};
+// ---Test Cases---
+/*
+const map1 = numbers.myMap(x => x * 2);
+const map2 = numbers2.myMap(times2);
+const map3 = numbers.myMap(modulo);
 
-const cb2 = (y) => {
-    console.log(squareroot(y));
-}
-
-const print = (x) => console.log(x);
-
-// let arr2 = [1, 2, 3, 4];
-// arr2.myMap(print);
-///arr2.myMap(cb);
-
-numbers.myMap(print);
-numbers.myMap(cb);
-numbers.myMap(cb2);
-console.log(numbers);
+console.log(map1);
+console.log(map2);
+console.log(map3);
+*/
