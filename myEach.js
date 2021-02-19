@@ -7,6 +7,7 @@ Array.prototype.myEach = function (callback) {
 
 /* ---Testing--- */
 
+/* Function Definiton */
 function times2(num) {
     return num * 2;
 }
@@ -17,7 +18,8 @@ const cb = (x) => {
 
 const print = (x) => console.log(x);
 
-let arr2 = [1, 2, 3, 4];
+// --- Test Cases ---
+// let arr2 = [1, 2, 3, 4];
 
-arr2.myEach(print);
-arr2.myEach(cb);
+// arr2.myEach(print);
+// arr2.myEach(cb);
