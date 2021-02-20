@@ -1,7 +1,7 @@
 Array.prototype.myFilter = function (funct, argument) {
     
     let length = this.length;
-    let arr = new Array(length) // New array
+    let arr = new Array(length) 
     let tempArr = this;
     let x = 0;
     let index_Count = -1;
@@ -33,17 +33,18 @@ Array.prototype.myFilter = function (funct, argument) {
     return arr;
 };
 
-/* Array Definition */
+/*
+// ---Array Definitions--- 
 const things = ["books", "pen", "paper", "phone", "computer"];
 const things2 = ["one", "1", "three", "3", "five", "5"];
 
 // ---Test Case--- 
-/*
+
 const filter = things.myFilter(word => word.length > 4);
 const filter2 = things2.myFilter(word => word.length <= 3);
 
 // ---Output---
 
-console.log(filter);
-console.log(filter2);
+console.log(filter); // outputs [ 'books', 'paper', 'phone', 'computer' ]
+console.log(filter2); // outputs [ 'one', '1', '3', '5' ]
 */
