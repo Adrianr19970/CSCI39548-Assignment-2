@@ -23,11 +23,12 @@ Array.prototype.myMap = function (callback) {
 
 /* ---Testing--- */
 
-/* Array */
+/*
+// ---Array Definitions---
 let numbers = [2, 4, 6, 9];
 let numbers2 = [5, 10, 15, 20];
 
-/* Function Definitons */
+// ---Function Definitons---
 function times2(num) {
     return num * 2;
 }
@@ -37,12 +38,12 @@ function modulo(num) {
 }
 
 // ---Test Cases---
-/*
 const map1 = numbers.myMap(x => x * 2);
 const map2 = numbers2.myMap(times2);
 const map3 = numbers.myMap(modulo);
 
-console.log(map1);
-console.log(map2);
-console.log(map3);
+console.log(map1); // Outputs [ 4, 8, 12, 18 ]
+console.log(map2); // Outputs [ 10, 20, 30, 40 ]
+console.log(map3); // Outputs [ 0, 0, 0, 1 ]
 */
+ 
