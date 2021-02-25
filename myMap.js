@@ -37,7 +37,7 @@ function modulo(num) {
     return num % 2;
 }
 
-// ---Test Cases---
+// ---Test Cases--
 const map1 = numbers.myMap(x => x * 2);
 const map2 = numbers2.myMap(times2);
 const map3 = numbers.myMap(modulo);
